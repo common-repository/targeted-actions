@@ -1,0 +1,8 @@
+/* Run npm install gulpfile.js from plugin root to get required packages */
+
+@import "variables.scss";
+
+/* Admin Control Panel */
+@import "admin/admin-template.scss";
+@import "admin/admin-form.scss";
+@import "admin/admin-list-rules.scss";

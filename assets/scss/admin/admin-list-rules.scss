@@ -1,0 +1,117 @@
+.tua-welcome {
+	.tua-all-rules {
+		.create-new-rule {
+			margin-top: 0;
+			margin-bottom: 20px;
+
+			.tua-button {
+				margin-top: 0;
+			}
+		}
+
+		.tua-rule-row {
+			display: flex;
+			flex-wrap: wrap;
+			font-size: 14px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			padding-left: 15px;
+			padding-right: 15px;
+			background-color: #f0f0f0;
+
+			@media only screen and (max-width: 1100px) {
+				display: block;
+
+				& > div {
+					margin-top: 10px;
+
+					&:first-child {
+						margin-top: 0;
+					}
+				}
+			}
+
+			&:nth-child(even) {
+				background-color: #e6e6e6;
+			}
+
+			&.tua-rule-row-header {
+				background-color: #000 !important;
+
+				@media only screen and (max-width: 1100px) {
+					display: none;
+				}
+			}
+
+			&.tua-rule-row-header > div{
+				font-weight: bold;
+				color: #fff;
+			}
+		}
+
+		.rule-name {
+			flex-basis: 25%;
+			flex-shrink: 0;
+			flex-grow: 0;
+		}
+
+		.rule-enabled {
+			flex-basis: 10%;
+			flex-shrink: 0;
+			flex-grow: 0;
+		}
+
+		.rule-type {
+			flex-basis: 20%;
+			flex-shrink: 0;
+			flex-grow: 0;
+		}
+
+		.rule-actions {
+			flex-basis: 45%;
+			flex-shrink: 0;
+			flex-grow: 0;
+
+			.tua-button {
+				margin-top: 0;
+				margin-left: 10px;
+
+				&:first-child {
+					margin-left: 0;
+				}
+
+				&.delete-rule {
+					background-color: #fc2605;
+					border-color: #000 !important;
+				}
+
+				@media only screen and (max-width: 500px) {
+					display: block;
+					width: 100%;
+					margin-left: 0;
+					margin-top: 10px;
+					text-align: center;
+					padding-left: 10px;
+					padding-right: 10px;
+
+					&:first-child {
+						margin-top: 0;
+					}
+				}
+			}
+
+			.confirm-delete {
+				padding: 15px;
+				border: 2px solid #fc2605;
+				background-color: #ffcac2;
+				margin-top: 15px;
+
+				.tua-button {
+					&:first-of-type {
+						margin-left: 0;
+					}
+ 				}
+			}
+		}
+	}
+}

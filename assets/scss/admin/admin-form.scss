@@ -1,0 +1,198 @@
+/* Form success and error messages */
+.form-status-messaging {
+	.form-message {
+		padding: 15px;
+		background-color: #f7f7f7;
+		margin-bottom: 20px;
+
+		&.form-success {
+			background-color: #e1ffd9;
+		}
+
+		&.form-failure {
+			background-color: #ffdbd9;
+		}
+
+		ul {
+			list-style-type: disc;
+			margin-left: 15px;
+
+			li {
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+}
+
+/* The Form */
+.custom-form {
+
+	/* The form fields */
+
+	.custom-form-field {
+		&.input,
+		&.textarea,
+		&.select {
+			label {
+				display: block;
+				font-weight: bold;
+				margin-bottom: 2px;
+				width: 100%;
+			}
+
+			input,
+			select {
+				border: 1px solid $form-field-border-color;
+				border-radius: 5px;
+				padding: 5px 7px;
+				display: block;
+				width: 100%;
+				max-width: 100%;
+			}
+
+			&.colorpicker {
+				position: relative;
+
+				input {
+					width: 50px;
+					cursor: pointer;
+				}
+
+				.picker-instructions {
+					position: absolute;
+					left: 55px;
+					top: 23px;
+				}
+			}
+		}
+
+		input[type=radio] {
+			display: inline-block;
+		}
+
+		.radio-label {
+			display: inline-block;
+			font-weight: normal;
+			margin-left: 0;
+			width: auto;
+		}
+
+		textarea {
+			width: 100%;
+			min-height: 50px;
+			border: 1px solid $form-field-border-color;
+			border-radius: 5px;
+		}
+
+		.error-state {
+			border: 1px solid #fc1f0f !important;
+		}
+
+		&.radio {
+			.form-field-label {
+				margin-bottom: 10px;
+				font-weight: bold;
+				display: block;
+			}
+		}
+	}
+
+	/* The Submit Button */
+
+	input[type=submit] {
+		padding: 10px 20px;
+		border: 2px solid #000;
+		background-color: #000;
+		color: #fff;
+		font-weight: bold;
+		transition: all .25s ease-in-out;
+		cursor: pointer;
+		margin-top: 20px;
+
+		&:hover {
+			color: #000;
+			background-color: #fff;
+		}
+
+		&[disabled] {
+			background-color: $form-field-border-color;
+			border-color: $form-field-border-color;
+			color: #fff;
+			cursor: not-allowed;
+		}
+
+	}
+
+	/* Helpers for displaying fields side by side */
+
+	.form-row {
+		display: flex;
+		flex-wrap: wrap;
+		flex-grow: 0;
+		flex-shrink: 0;
+		margin-top: 15px;
+		margin-left: -15px;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&.settings-row {
+			.col {
+				padding: 15px;
+				box-sizing: border-box;
+				border: 2px solid #000;
+				background-color: #fcfcfc;
+
+				p {
+					max-width: 650px;
+					
+					&:last-child {
+						margin-bottom: 0;
+					}
+				}
+
+				.mt-15 {
+					margin-top: 15px;
+				}
+
+				.constrained {
+					input,
+					label,
+					select {
+						max-width: 300px;
+					}
+
+					.textarea {
+						max-width: 500px;
+					}
+				}
+			}
+		}
+
+		.col {
+			flex-basis: calc(100% - 15px);
+			margin-left: 15px;
+		}
+
+		&.col-two {
+			.col {
+				flex-basis: calc(100% / 2 - 15px);
+			}
+		}
+
+		&.col-three {
+			.col {
+				flex-basis: calc(100% / 3 - 15px);
+			}
+		}
+
+		&.col-four {
+			.col {
+				flex-basis: calc(100% / 3 - 15px);
+			}
+		}
+	}
+}

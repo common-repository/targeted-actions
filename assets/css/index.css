@@ -1,0 +1,260 @@
+/* Run npm install gulpfile.js from plugin root to get required packages */
+/* Admin Control Panel */
+.plugin-wrapper {
+  width: calc(100% - 15px); }
+
+.padded-element {
+  padding: 15px;
+  box-sizing: border-box;
+  border: 2px solid #000;
+  background-color: #fcfcfc;
+  margin-top: 15px;
+  margin-bottom: 15px; }
+  .padded-element h1, .padded-element h2, .padded-element h3, .padded-element p {
+    max-width: 650px; }
+    .padded-element h1:first-child, .padded-element h2:first-child, .padded-element h3:first-child, .padded-element p:first-child {
+      margin-top: 0;
+      padding-top: 0; }
+  .padded-element .settings-row .col {
+    border: 2px solid #f0f0f0 !important;
+    background-color: #f0f0f0 !important; }
+    .padded-element .settings-row .col p:first-child {
+      margin-top: 10px; }
+
+.mt-20 {
+  margin-top: 20px; }
+
+.mt-30 {
+  margin-top: 30px; }
+
+.mt-40 {
+  margin-top: 40px; }
+
+.mb-20 {
+  margin-bottom: 20px; }
+
+.mb-30 {
+  margin-bottom: 30px; }
+
+.mb-40 {
+  margin-bottom: 40px; }
+
+.tua-button {
+  padding: 10px 20px;
+  border: 2px solid #000;
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  transition: all .25s ease-in-out;
+  cursor: pointer;
+  margin-top: 20px;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 16px;
+  box-sizing: border-box; }
+  .tua-button:hover, .tua-button:active, .tua-button:focus {
+    color: #000;
+    background-color: #fff; }
+  .tua-button[disabled] {
+    background-color: #e3e3e3;
+    border-color: #e3e3e3;
+    color: #fff;
+    cursor: not-allowed; }
+
+.hidden {
+  display: none !important; }
+
+/* Form success and error messages */
+.form-status-messaging .form-message {
+  padding: 15px;
+  background-color: #f7f7f7;
+  margin-bottom: 20px; }
+  .form-status-messaging .form-message.form-success {
+    background-color: #e1ffd9; }
+  .form-status-messaging .form-message.form-failure {
+    background-color: #ffdbd9; }
+  .form-status-messaging .form-message ul {
+    list-style-type: disc;
+    margin-left: 15px; }
+    .form-status-messaging .form-message ul li:last-child {
+      margin-bottom: 0; }
+
+/* The Form */
+.custom-form {
+  /* The form fields */
+  /* The Submit Button */
+  /* Helpers for displaying fields side by side */ }
+  .custom-form .custom-form-field.input label, .custom-form .custom-form-field.textarea label, .custom-form .custom-form-field.select label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 2px;
+    width: 100%; }
+  .custom-form .custom-form-field.input input,
+  .custom-form .custom-form-field.input select, .custom-form .custom-form-field.textarea input,
+  .custom-form .custom-form-field.textarea select, .custom-form .custom-form-field.select input,
+  .custom-form .custom-form-field.select select {
+    border: 1px solid #e3e3e3;
+    border-radius: 5px;
+    padding: 5px 7px;
+    display: block;
+    width: 100%;
+    max-width: 100%; }
+  .custom-form .custom-form-field.input.colorpicker, .custom-form .custom-form-field.textarea.colorpicker, .custom-form .custom-form-field.select.colorpicker {
+    position: relative; }
+    .custom-form .custom-form-field.input.colorpicker input, .custom-form .custom-form-field.textarea.colorpicker input, .custom-form .custom-form-field.select.colorpicker input {
+      width: 50px;
+      cursor: pointer; }
+    .custom-form .custom-form-field.input.colorpicker .picker-instructions, .custom-form .custom-form-field.textarea.colorpicker .picker-instructions, .custom-form .custom-form-field.select.colorpicker .picker-instructions {
+      position: absolute;
+      left: 55px;
+      top: 23px; }
+  .custom-form .custom-form-field input[type=radio] {
+    display: inline-block; }
+  .custom-form .custom-form-field .radio-label {
+    display: inline-block;
+    font-weight: normal;
+    margin-left: 0;
+    width: auto; }
+  .custom-form .custom-form-field textarea {
+    width: 100%;
+    min-height: 50px;
+    border: 1px solid #e3e3e3;
+    border-radius: 5px; }
+  .custom-form .custom-form-field .error-state {
+    border: 1px solid #fc1f0f !important; }
+  .custom-form .custom-form-field.radio .form-field-label {
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: block; }
+  .custom-form input[type=submit] {
+    padding: 10px 20px;
+    border: 2px solid #000;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    transition: all .25s ease-in-out;
+    cursor: pointer;
+    margin-top: 20px; }
+    .custom-form input[type=submit]:hover {
+      color: #000;
+      background-color: #fff; }
+    .custom-form input[type=submit][disabled] {
+      background-color: #e3e3e3;
+      border-color: #e3e3e3;
+      color: #fff;
+      cursor: not-allowed; }
+  .custom-form .form-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-top: 15px;
+    margin-left: -15px; }
+    .custom-form .form-row:first-child {
+      margin-top: 0; }
+    .custom-form .form-row.settings-row .col {
+      padding: 15px;
+      box-sizing: border-box;
+      border: 2px solid #000;
+      background-color: #fcfcfc; }
+      .custom-form .form-row.settings-row .col p {
+        max-width: 650px; }
+        .custom-form .form-row.settings-row .col p:last-child {
+          margin-bottom: 0; }
+      .custom-form .form-row.settings-row .col .mt-15 {
+        margin-top: 15px; }
+      .custom-form .form-row.settings-row .col .constrained input,
+      .custom-form .form-row.settings-row .col .constrained label,
+      .custom-form .form-row.settings-row .col .constrained select {
+        max-width: 300px; }
+      .custom-form .form-row.settings-row .col .constrained .textarea {
+        max-width: 500px; }
+    .custom-form .form-row .col {
+      flex-basis: calc(100% - 15px);
+      margin-left: 15px; }
+    .custom-form .form-row.col-two .col {
+      flex-basis: calc(100% / 2 - 15px); }
+    .custom-form .form-row.col-three .col {
+      flex-basis: calc(100% / 3 - 15px); }
+    .custom-form .form-row.col-four .col {
+      flex-basis: calc(100% / 3 - 15px); }
+
+.tua-welcome .tua-all-rules .create-new-rule {
+  margin-top: 0;
+  margin-bottom: 20px; }
+  .tua-welcome .tua-all-rules .create-new-rule .tua-button {
+    margin-top: 0; }
+
+.tua-welcome .tua-all-rules .tua-rule-row {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: #f0f0f0; }
+  @media only screen and (max-width: 1100px) {
+    .tua-welcome .tua-all-rules .tua-rule-row {
+      display: block; }
+      .tua-welcome .tua-all-rules .tua-rule-row > div {
+        margin-top: 10px; }
+        .tua-welcome .tua-all-rules .tua-rule-row > div:first-child {
+          margin-top: 0; } }
+  .tua-welcome .tua-all-rules .tua-rule-row:nth-child(even) {
+    background-color: #e6e6e6; }
+  .tua-welcome .tua-all-rules .tua-rule-row.tua-rule-row-header {
+    background-color: #000 !important; }
+    @media only screen and (max-width: 1100px) {
+      .tua-welcome .tua-all-rules .tua-rule-row.tua-rule-row-header {
+        display: none; } }
+  .tua-welcome .tua-all-rules .tua-rule-row.tua-rule-row-header > div {
+    font-weight: bold;
+    color: #fff; }
+
+.tua-welcome .tua-all-rules .rule-name {
+  flex-basis: 25%;
+  flex-shrink: 0;
+  flex-grow: 0; }
+
+.tua-welcome .tua-all-rules .rule-enabled {
+  flex-basis: 10%;
+  flex-shrink: 0;
+  flex-grow: 0; }
+
+.tua-welcome .tua-all-rules .rule-type {
+  flex-basis: 20%;
+  flex-shrink: 0;
+  flex-grow: 0; }
+
+.tua-welcome .tua-all-rules .rule-actions {
+  flex-basis: 45%;
+  flex-shrink: 0;
+  flex-grow: 0; }
+  .tua-welcome .tua-all-rules .rule-actions .tua-button {
+    margin-top: 0;
+    margin-left: 10px; }
+    .tua-welcome .tua-all-rules .rule-actions .tua-button:first-child {
+      margin-left: 0; }
+    .tua-welcome .tua-all-rules .rule-actions .tua-button.delete-rule {
+      background-color: #fc2605;
+      border-color: #000 !important; }
+    @media only screen and (max-width: 500px) {
+      .tua-welcome .tua-all-rules .rule-actions .tua-button {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        margin-top: 10px;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px; }
+        .tua-welcome .tua-all-rules .rule-actions .tua-button:first-child {
+          margin-top: 0; } }
+  .tua-welcome .tua-all-rules .rule-actions .confirm-delete {
+    padding: 15px;
+    border: 2px solid #fc2605;
+    background-color: #ffcac2;
+    margin-top: 15px; }
+    .tua-welcome .tua-all-rules .rule-actions .confirm-delete .tua-button:first-of-type {
+      margin-left: 0; }
